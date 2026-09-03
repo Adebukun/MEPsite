@@ -1,17 +1,25 @@
-# MEP SitePulse
+# MEP SitePulse — Phase 1
 
-A site-first MEP project monitoring platform: capture site information once, turn it into structured project intelligence and professional reports.
+This phase turns the static MVP into a working **Site Visit Capture** prototype.
 
-## MVP
-- Multi-project dashboard
-- Site visit capture
-- Activity/progress tracking
-- Issues and follow-ups
-- Photo/evidence records
-- Automated daily report preview
+## Included
+- Overview dashboard
+- Site visit list/search
+- New site visit workflow
+- Draft and submit states
+- Progress, manpower, materials and activity capture
+- Issue/blocker capture with priority
+- Evidence photo count field (actual image upload comes with backend/storage phase)
+- Auto-generated report preview
+- Print / PDF browser action
+- LocalStorage persistence
+- Responsive layout
 
-## Product principle
-**Capture once. Report automatically. Manage every MEP project from one place.**
+## Run locally
+```bash
+npm install
+npm run dev
+```
 
-## Status
-MVP scaffold — ready for GitHub and implementation.
+## Important
+This phase is intentionally frontend-only. Data is stored in the browser. The next engineering phase should connect Supabase/PostgreSQL, authentication and Supabase Storage so records are shared across users/devices.
